@@ -1,0 +1,14 @@
+version: '2'
+services:
+    opensanca-hyper-helloworld:
+        container_name: opensanca-hyper-helloworld
+        build: .
+        image: opensanca-hyper-helloworld
+        ports:
+        - 8080:80
+    opensanca-hyper-helloworld-api:
+        container_name: opensanca-hyper-helloworld-api
+        build: ./api/
+        image: opensanca-hyper-helloworld-api
+        ports:
+        - 8000:8000        

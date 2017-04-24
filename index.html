@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Opensanca infra agile!</title>
+	</head>
+	
+	<body>
+		<h1>Welcome to Opensanca agile infra on hyper.sh!</h1>
+		<pre>Effortless Docker Hosting</pre>
+		
+		<div id="members">
+		</div>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	
+	<script>
+		$.get('http://localhost:8000/event/239287178/attendance', function(resp) {
+			console.log(resp);
+		});
+	</script>	
+</html>
